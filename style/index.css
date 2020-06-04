@@ -16,11 +16,24 @@ h1{
     font-size:7rem;
     margin-left: 2%;
 }
+
 .links a{ /* Navigation buttons*/
     font-size: 3rem;
     color:black;
     background-color: peachpuff;
     padding: .7%;
+}
+
+@keyframes pulse{
+    0%{
+    background-color: peachpuff
+    }
+    100% {
+        background-color:seagreen;
+    }
+}
+.links a:hover{
+    animation: pulse 5s infinite;
 }
 .links {
     display:flex;
@@ -35,7 +48,8 @@ nav div{ /*Creates the margin for navigation*/
 
     flex-direction:row;
     justify-content: space-around;
-    margin: 1%;
+    margin-top: 1%;
+    margin-bottom:1%;
 }
 
 .bigImageContainer{
@@ -90,4 +104,5 @@ footer a{
     padding: 0.7%;
     background-color:peachpuff;
     color:black;
+    margin: 1%;
 }
