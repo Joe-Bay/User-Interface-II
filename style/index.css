@@ -4,10 +4,13 @@
     margin:0;
     padding:0;
     max-width:100%;
-    border: 1px solid grey;
+    /*border: 1px solid grey;*/ /* border to make styling easier*/
 }
 html{
     font-size: 62.5%;
+}
+header{
+    background-color:darkgray;
 }
 h1{
     font-size:7rem;
@@ -16,7 +19,7 @@ h1{
 .links a{ /* Navigation buttons*/
     font-size: 3rem;
     color:black;
-    background-color:mistyrose;
+    background-color: peachpuff;
     padding: .7%;
 }
 .links {
@@ -27,11 +30,12 @@ nav div{ /*Creates the margin for navigation*/
 }
 
 
-.section1{
+.section1{/* spacing on section 1*/
     display:flex;
 
     flex-direction:row;
     justify-content: space-around;
+    margin: 1%;
 }
 
 .bigImageContainer{
@@ -49,10 +53,11 @@ nav div{ /*Creates the margin for navigation*/
 .headingText a{
     font-size: 3rem;
     padding: .7%;
-    background-color:mistyrose;
+    background-color:peachpuff;
     color:black;
-    width:15%;
+    width:20%;
     border-radius: 3px;
+    margin: 1%;
 }
 .headingText p{
     font-size: 2.7rem;
@@ -70,5 +75,19 @@ display:flex;
 flex-direction:row;
 font-size: 2.4rem;
 justify-content: space-around;
-margin-left: -1%;
+}
+footer{
+    text-align:center;
+    height:20vh;
+    background-color:darkgray;
+}
+footer h2{
+    font-size: 4.5rem;
+    margin: 1%;
+}
+footer a{
+    font-size:3rem;
+    padding: 0.7%;
+    background-color:peachpuff;
+    color:black;
 }
