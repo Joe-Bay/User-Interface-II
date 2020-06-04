@@ -1,1 +1,42 @@
-/* Add CSS styling here */
+/*CSS RESET HERE*/
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    max-width:100%;
+    border: 1px solid grey;
+}
+html{
+    font-size: 62.5%;
+}
+h1{
+    font-size:5rem;
+    margin-left: 2%;
+}
+.links a{ /* Navigation buttons*/
+    font-size: 2.4rem;
+    color:black;
+    background-color:mistyrose;
+    padding: .7%;
+}
+.links {
+    display:flex;
+}
+nav div{ /*Creates the margin for navigation*/
+    margin-left: 3%;
+}
+.bigImageContainer img{
+    width:30%;
+    height:auto;
+
+}
+.bigImageContainer{
+    width:50%;
+    border: 5px solid green;
+}
+.section1{
+    display:flex;
+    width:100%;
+justify-content: space-around;
+border: 5px solid red;
+}
