@@ -10,11 +10,11 @@ html{
     font-size: 62.5%;
 }
 h1{
-    font-size:5rem;
+    font-size:7rem;
     margin-left: 2%;
 }
 .links a{ /* Navigation buttons*/
-    font-size: 2.4rem;
+    font-size: 3rem;
     color:black;
     background-color:mistyrose;
     padding: .7%;
@@ -25,18 +25,50 @@ h1{
 nav div{ /*Creates the margin for navigation*/
     margin-left: 3%;
 }
-.bigImageContainer img{
-    width:30%;
-    height:auto;
 
-}
-.bigImageContainer{
-    width:50%;
-    border: 5px solid green;
-}
+
 .section1{
     display:flex;
+
+    flex-direction:row;
+    justify-content: space-around;
+}
+
+.bigImageContainer{
+    width:47%;
+}
+.headingText{
+    display:flex;
+    flex-direction:column;
+    width:47%;
+}
+.headingText h2{
+    font-size: 6rem;
+    margin-top: 10%;
+}
+.headingText a{
+    font-size: 3rem;
+    padding: .7%;
+    background-color:mistyrose;
+    color:black;
+    width:15%;
+    border-radius: 3px;
+}
+.headingText p{
+    font-size: 2.7rem;
+}
+.projectImageContainer{
     width:100%;
+    display:flex;
+    justify-content:space-around;
+}
+.projectImageContainer img{
+    width:22.5%;
+}
+.projectTitleContainer{
+display:flex;
+flex-direction:row;
+font-size: 2.4rem;
 justify-content: space-around;
-border: 5px solid red;
+margin-left: -1%;
 }
