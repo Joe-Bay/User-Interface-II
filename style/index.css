@@ -75,6 +75,7 @@ nav div{ /*Creates the margin for navigation*/
     border-radius: 3px;
     margin: 1%;
     text-align: center;
+    border: 1px solid black;
     text-decoration: none;
 }
 .headingText p{
@@ -106,18 +107,29 @@ footer a{
     background-color:peachpuff;
     color:black;
     margin: 1%;
+    border: 1px solid black;
     text-decoration: none;
+}
+@media(max-width:1920px){ /*widescreen view*/
+.headingText p{
+    font-size:3rem; /*just boosting the font-size a little to make it look cleaner*/
+}
+}
+@media(max-width:1366px){/*laptop view*/
+.headingText a{
+    width:30% /*added width to button so its all on one line*/
+}
 }
 @media(max-width:800px){
     header{
         text-align: center;
     }
-    header div{
+    header div{ /*aligning the navigation to stack*/
         display:flex;
         justify-content:center;
         flex-wrap:wrap;
     }
-    header div a{
+    header div a{ /*letting our nav drop to next line*/
         width:55%;
     }
     .bigImageContainer{
@@ -167,4 +179,28 @@ width:100%;
 .headingText a{
     width: 40%;
 }
+}
+@media(max-width:360px){ /*Iphone size stretch goal*/
+h1{
+    font-size:7rem;
+}
+.links a{
+    font-size:2rem;
+}
+.headingText h2{
+    font-size:5rem;
+}
+.headingText a{
+    width:50%;
+}
+.headingText p{
+    font-size: 1.6rem;
+}
+footer h2{
+    font-size: 3.5rem;
+}
+#projectSection{
+    font-size: 1.8rem;
+}
+
 }
