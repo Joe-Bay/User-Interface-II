@@ -4,7 +4,7 @@
     margin:0;
     padding:0;
     max-width:100%;
-    border: 1px solid grey; /*border to make styling easier*/
+    /*border: 1px solid grey; /*border to make styling easier*/
 }
 html{
     font-size: 62.5%;
@@ -22,6 +22,8 @@ h1{
     color:black;
     background-color: peachpuff;
     padding: .7%;
+    border: 1px solid black;
+    text-decoration: none;
 }
 
 @keyframes pulse{
@@ -73,6 +75,7 @@ nav div{ /*Creates the margin for navigation*/
     border-radius: 3px;
     margin: 1%;
     text-align: center;
+    text-decoration: none;
 }
 .headingText p{
     font-size: 2.7rem;
@@ -103,6 +106,7 @@ footer a{
     background-color:peachpuff;
     color:black;
     margin: 1%;
+    text-decoration: none;
 }
 @media(max-width:800px){
     header{
@@ -156,5 +160,11 @@ justify-content: center;
 }
 #projectSection img{
 width:100%;
+}
+.headingText p{
+    font-size: 2rem;
+}
+.headingText a{
+    width: 40%;
 }
 }
