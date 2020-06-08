@@ -4,7 +4,7 @@
     margin:0;
     padding:0;
     max-width:100%;
-    /*border: 1px solid grey;*/ /* border to make styling easier*/
+    border: 1px solid grey; /*border to make styling easier*/
 }
 html{
     font-size: 62.5%;
@@ -72,27 +72,25 @@ nav div{ /*Creates the margin for navigation*/
     width:20%;
     border-radius: 3px;
     margin: 1%;
+    text-align: center;
 }
 .headingText p{
     font-size: 2.7rem;
 }
-.projectImageContainer{
-    width:100%;
-    display:flex;
-    justify-content:space-around;
-}
-.projectImageContainer img{
-    width:22.5%;
-}
-.projectTitleContainer{
+
+
+#projectSection{
 display:flex;
-flex-direction:row;
+flex-wrap:wrap;
 font-size: 2.4rem;
-justify-content: space-around;
+text-align:center;
+}
+#projectSection div{
+    width:22.5%;
+    margin: 1%;
 }
 footer{
     text-align:center;
-    height:20vh;
     background-color:darkgray;
 }
 footer h2{
@@ -100,9 +98,63 @@ footer h2{
     margin: 1%;
 }
 footer a{
-    font-size:3rem;
-    padding: 0.7%;
+    font-size:2.4rem;
+    padding: 0.3%;
     background-color:peachpuff;
     color:black;
     margin: 1%;
+}
+@media(max-width:800px){
+    header{
+        text-align: center;
+    }
+    header div{
+        display:flex;
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+    header div a{
+        width:55%;
+    }
+    .bigImageContainer{
+        margin: 1.5%;
+    }
+    .section1{
+        flex-wrap:wrap;
+    }
+    .bigImageContainer{
+    width:100%;
+    }
+.headingText{
+    width:100%;
+    text-align:center;
+}
+.headingText{
+    align-items: center;
+}
+.headingText h2{
+    margin:1%;
+}
+#projectSection{
+font-size: 2rem;
+justify-content: center;
+}
+#projectSection img{
+    width:100%;
+    border-radius: 10px;;
+}
+#projectSection div{
+    width:40%;
+    justify-content: space-around;
+}
+
+}
+
+@media(max-width:500px){ /*Phone Screen*/
+#projectSection{
+    font-size: 2rem;
+}
+#projectSection img{
+width:100%;
+}
 }
