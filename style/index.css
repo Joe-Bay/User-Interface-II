@@ -1,1 +1,108 @@
-/* Add CSS styling here */
+/*CSS RESET HERE*/
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    max-width:100%;
+    /*border: 1px solid grey;*/ /* border to make styling easier*/
+}
+html{
+    font-size: 62.5%;
+}
+header{
+    background-color:darkgray;
+}
+h1{
+    font-size:7rem;
+    margin-left: 2%;
+}
+
+.links a{ /* Navigation buttons*/
+    font-size: 3rem;
+    color:black;
+    background-color: peachpuff;
+    padding: .7%;
+}
+
+@keyframes pulse{
+    0%{
+    background-color: peachpuff
+    }
+    100% {
+        background-color:seagreen;
+    }
+}
+.links a:hover{
+    animation: pulse 5s infinite;
+}
+.links {
+    display:flex;
+}
+nav div{ /*Creates the margin for navigation*/
+    margin-left: 3%;
+}
+
+
+.section1{/* spacing on section 1*/
+    display:flex;
+
+    flex-direction:row;
+    justify-content: space-around;
+    margin-top: 1%;
+    margin-bottom:1%;
+}
+
+.bigImageContainer{
+    width:47%;
+}
+.headingText{
+    display:flex;
+    flex-direction:column;
+    width:47%;
+}
+.headingText h2{
+    font-size: 6rem;
+    margin-top: 10%;
+}
+.headingText a{
+    font-size: 3rem;
+    padding: .7%;
+    background-color:peachpuff;
+    color:black;
+    width:20%;
+    border-radius: 3px;
+    margin: 1%;
+}
+.headingText p{
+    font-size: 2.7rem;
+}
+.projectImageContainer{
+    width:100%;
+    display:flex;
+    justify-content:space-around;
+}
+.projectImageContainer img{
+    width:22.5%;
+}
+.projectTitleContainer{
+display:flex;
+flex-direction:row;
+font-size: 2.4rem;
+justify-content: space-around;
+}
+footer{
+    text-align:center;
+    height:20vh;
+    background-color:darkgray;
+}
+footer h2{
+    font-size: 4.5rem;
+    margin: 1%;
+}
+footer a{
+    font-size:3rem;
+    padding: 0.7%;
+    background-color:peachpuff;
+    color:black;
+    margin: 1%;
+}
